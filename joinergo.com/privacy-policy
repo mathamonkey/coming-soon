@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from joinergo.com/privacy-policy by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 17:29:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ergo</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <style>
+        .card-icon {
+            font-size: 2rem;
+            color: #0E4676;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <header class="border-b border-gray-100 sticky top-0 bg-white/90 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-4 h-16 flex items-center">
+            <a href="#" class="flex items-center flex-shrink-0">
+                <img src="Ergo%20Logo.png" alt="Ergo" class="h-8 w-8">
+                <span class="ml-2 text-xl sm:text-2xl font-bold text-gray-900">Ergo</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 max-w-4xl">
+        <div class="prose max-w-none">
+            <div class="text-gray-600 space-y-6">
+                <h1 class="text-3xl font-bold text-gray-900">Privacy Policy</h1>
+                <p class="text-sm text-gray-500">Last Updated: January 15, 2025</p>
+                
+                <p>Welcome! This Privacy Policy ("Policy") outlines how we collect, process, share, and protect your Personal Data when you use our website https://joinergo.com ("Website") and our related services ("Services"). This Policy applies to both users of our Services and professionals whose contact details appear in our Services. Please read this Policy carefully to understand how we handle your Personal Data and your rights regarding it.</p>
+
+                <h2 class="text-2xl font-semibold text-gray-900">1. Personal Data We Collect</h2>
+                
+                <h3 class="text-xl font-semibold text-gray-900">1.1. Personal Data You Provide:</h3>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><span class="font-medium">Account Information:</span> When you create an account, we collect your name, email address, and password to maintain your account.</li>
+                    <li><span class="font-medium">Contact Information:</span> Any Personal Data you provide through emails, contact forms, or other communications.</li>
+                    <li><span class="font-medium">Support Information:</span> Details provided when requesting technical support.</li>
+                    <li><span class="font-medium">Financial Information:</span> If you purchase a subscription, we collect payment information through secure providers.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-gray-900">1.2. Information Collected Automatically:</h3>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><span class="font-medium">Single Sign-On:</span> Data from Internet service providers when using single sign-on services.</li>
+                    <li><span class="font-medium">Cookies and Similar Technologies:</span> We use cookies to collect data about your interactions.</li>
+                    <li><span class="font-medium">Device and Usage Information:</span> Information about your device and how you use our Services.</li>
+                    <li><span class="font-medium">Marketing and Advertising:</span> When you visit or log in to our website, cookies and similar technologies may be used by our online data partners or vendors to associate these activities with other personal information they or others have about you, including by association with your email. We (or service providers on our behalf) may then send communications and marketing to these email addresses. You may opt out of receiving this advertising by visiting <a href="https://app.retention.com/optout" class="text-[#0E4676] hover:text-[#0a3557] underline">https://app.retention.com/optout</a>.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-gray-900">2. How We Use Your Personal Data</h2>
+                <p>We use your data for the following purposes:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><span class="font-medium">To Operate and Administer Services:</span> Manage your account, provide and support our Services, and communicate with you.</li>
+                    <li><span class="font-medium">To Improve and Personalize Services:</span> Analyze usage, develop new features, and enhance security.</li>
+                    <li><span class="font-medium">For Marketing:</span> Send promotional materials and display targeted ads. You can opt out of marketing communications.</li>
+                    <li><span class="font-medium">For Legal Compliance:</span> Fulfill legal obligations and protect our rights and interests.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-gray-900">3. Google User Data Protection Commitments</h2>
+                <h3 class="text-xl font-semibold text-gray-900">Strict Usage Guidelines</h3>
+                <p>When accessing data through Google APIs, we follow the Google API Services User Data Policy rigorously, with particular attention to Limited Use requirements. This data is utilized exclusively to power our Email Monitoring and Follow-Ups Platforms' core purpose: enabling AI workflows to interact effectively with Google APIs.</p>
+
+                <h3 class="text-xl font-semibold text-gray-900">Data Sharing Restrictions</h3>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li>Your Google user data is never sold to any party</li>
+                    <li>Advertising networks have no access to your Google user data</li>
+                    <li>External service access is limited strictly to what's required for platform operations</li>
+                    <li>Usage is restricted to essential platform functions that enable AI agents to properly interface with Google API endpoints</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-gray-900">AI Training Restrictions</h3>
+                <p>Your Google user data is protected from AI/ML applications. We never use it for:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li>Training or enhancing AI/ML models of any kind</li>
+                    <li>Building or improving general AI systems</li>
+                    <li>Analytics or data mining beyond essential platform operations</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-gray-900">Google API Access and Usage</h3>
+                <p>Our service integrates with Google APIs to provide core functionality. Here's how we use specific Google API scopes:</p>
+                
+                <h4 class="text-lg font-semibold text-gray-900 mt-4">Email Access and Management</h4>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><span class="font-medium">Gmail Access:</span> We access your mailbox to read email content, thread histories, and attachments. This is essential for:
+                        <ul class="list-disc list-inside space-y-1 ml-8">
+                            <li>Parsing and analyzing incoming messages for CRM insights</li>
+                            <li>Automatically logging email data</li>
+                            <li>Monitoring threads for follow-up actions</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium">Email Composition:</span> We use this scope to:
+                        <ul class="list-disc list-inside space-y-1 ml-8">
+                            <li>Create and update draft emails</li>
+                            <li>Send automated follow-up drafts</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4 class="text-lg font-semibold text-gray-900 mt-4">Cloud Services Integration</h4>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><span class="font-medium">Analytics Hub API:</span> Used to:
+                        <ul class="list-disc list-inside space-y-1 ml-8">
+                            <li>Configure and manage Google Cloud resources</li>
+                            <li>Store and retrieve necessary application data</li>
+                            <li>Maintain service configuration settings</li>
+                        </ul>
+                    </li>
+                    <li><span class="font-medium">Cloud Pub/Sub API:</span> Enables:
+                        <ul class="list-disc list-inside space-y-1 ml-8">
+                            <li>Real-time email notification processing</li>
+                            <li>Management of push notification subscriptions</li>
+                            <li>Per-user topic and subscription handling</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="bg-blue-50 p-4 rounded-lg mt-4">
+                    <p class="font-medium">Important Note About Email Data:</p>
+                    <p>While we allow access to your email data to provide our services, we:
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li>Never store complete email content long-term</li>
+                            <li>Do not share your emails with third parties beyond authorized CRM integrations</li>
+                            <li>Only process email data for the explicit purpose of CRM automation and insights</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <h2 class="text-2xl font-semibold text-gray-900">4. Your Choices</h2>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><span class="font-medium">Marketing Communications:</span> You can opt out of receiving marketing communications by contacting us or following unsubscribe instructions in our emails.</li>
+                    <li><span class="font-medium">Access, Correction, and Deletion:</span> You can request access to, correction of, or deletion of your Personal Data by contacting us.</li>
+                    <li><span class="font-medium">Additional Rights:</span> Depending on your location, you may have further rights under applicable laws.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-gray-900">5. Children's Privacy</h2>
+                <p>Our Services are not intended for children under 18. We do not knowingly collect any personal data from children. If we learn that we have collected data from a child, we will take steps to delete it.</p>
+
+                <h2 class="text-2xl font-semibold text-gray-900">6. Data Security</h2>
+                <p>We use physical, managerial, and technical safeguards to protect your Personal Data. However, no online transmission is completely secure. You are responsible for maintaining the confidentiality of your password.</p>
+
+                <h2 class="text-2xl font-semibold text-gray-900">7. Data Retention</h2>
+                <p>We retain Personal Data only as long as necessary to fulfill the purposes outlined in this Policy, comply with legal obligations, and manage backups and fraud prevention.</p>
+
+                <h2 class="text-2xl font-semibold text-gray-900">8. Third-Party Services</h2>
+                <p>Our Services may include links to third-party sites. We are not responsible for their privacy practices. Review their policies before providing Personal Data.</p>
+
+                <h2 class="text-2xl font-semibold text-gray-900">9. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be effective immediately upon posting the updated Privacy Policy on our Site. Users are encouraged to review this Privacy Policy periodically to stay informed of updates. Your continued use of the Site after the effective date of the revised Privacy Policy constitutes your acceptance of the terms.</p>
+
+                <h2 class="text-2xl font-semibold text-gray-900">10. Contact Us</h2>
+                <p>For any questions or requests regarding this Policy:</p>
+                <p class="font-medium mt-4">All Privacy Requests: <a href="mailto:ishan@joinergo.com" class="text-[#0E4676] hover:text-[#0a3557]">ishan@joinergo.com</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-100 py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <p class="text-sm text-gray-600 text-center">
+                © Ergo. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+<!-- Mirrored from joinergo.com/privacy-policy by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 17:29:37 GMT -->
+</html> 

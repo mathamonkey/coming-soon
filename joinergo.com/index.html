@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from joinergo.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 17:29:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Other head elements -->
+        <script>
+            !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetGroupPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+            posthog.init('phc_leZ5PfdNxtceuEdCUfVweIemmeL5m7Gc6BbT3u1uU76', {
+                api_host:'https://us.i.posthog.com',
+                person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
+            })
+        </script>
+        <script>!function () {var reb2b = window.reb2b = window.reb2b || [];if (reb2b.invoked) return;reb2b.invoked = true;reb2b.methods = ["identify", "collect"];reb2b.factory = function (method) {return function () {var args = Array.prototype.slice.call(arguments);args.unshift(method);reb2b.push(args);return reb2b;};};for (var i = 0; i < reb2b.methods.length; i++) {var key = reb2b.methods[i];reb2b[key] = reb2b.factory(key);}reb2b.load = function (key) {var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" + key + "/7N850HPJL0N1.js.gz";var first = document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script, first);};reb2b.SNIPPET_VERSION = "1.0.1";reb2b.load("7N850HPJL0N1");}();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ergo - Intelligent CRM Automation</title>
+    
+    <!-- Favicon Package Implementation -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.html" color="#0E4676">
+    <meta name="msapplication-TileColor" content="#0E4676">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0E4676;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        body {
+            background-color: #FAF9F5;
+            color: rgb(17, 24, 39);
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        
+        .bg-subtle-gray {
+            background-color: #FEFDF7;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: white;
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            transition-property: all;
+            transition-duration: 200ms;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-blue);
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        }
+
+        .card {
+            background-color: #F5F5F3;
+            border: 1px solid rgb(229, 231, 235);
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            padding: 2rem;
+            transition-property: all;
+            transition-duration: 300ms;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #0E4676 0%, #2A6478 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            transition-property: all;
+            transition-duration: 200ms;
+        }
+        .btn-gradient:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .container {
+            max-width: 1280px !important;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding-left: 6rem !important;
+                padding-right: 6rem !important;
+            }
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            color: #0E4676;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .bg-gradient-1 {
+            background: linear-gradient(135deg, #F4F4F4 0%, #E5EEF3 100%);
+        }
+        .bg-gradient-2 {
+            background: linear-gradient(135deg, #FFC19E 0%, #FFAD99 100%);
+        }
+        .bg-gradient-3 {
+            background: linear-gradient(135deg, #5FA8C5 0%, #2A6478 100%);
+        }
+
+        .stepper-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0 0 0;
+            padding-top: 2rem;
+        }
+
+        .stepper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 120px;
+            text-align: center;
+        }
+
+        .step p {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.2;
+        }
+
+        .step.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .step-icon {
+            width: 4rem;
+            height: 4rem;
+            padding: 0.75rem;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 0.5rem;
+            object-fit: contain;
+        }
+
+        .step:hover .step-icon {
+            transform: scale(1.05);
+        }
+
+        .arrow {
+            width: 50px;
+            height: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+            flex-shrink: 0;
+            align-self: center;
+            margin-top: -32px;
+        }
+
+        .arrow.animate {
+            opacity: 0.6;
+            animation: arrowFlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes arrowFlow {
+            from { transform: translateX(-3px); }
+            to { transform: translateX(3px); }
+        }
+
+        .step-first {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 100px;
+            text-align: center;
+        }
+
+        .step-first p {
+            width: 120px;
+            margin-left: -10px;
+        }
+
+        /* Updated solid background colors */
+        .solid-bg-1 {
+            background-color: #CDEAF0; /* Soft Mint */
+        }
+
+        .solid-bg-2 {
+            background-color: #E6E0DC; /* Soft Taupe */
+        }
+
+        .solid-bg-3 {
+            background-color: #D0DEE8; /* Lightened Blue */
+        }
+
+        /* Remove the gradient background from the stats bar */
+        .stats-bar {
+            background-color: #FEFDF7;
+            border-radius: 1.5rem;
+            padding: 2rem;
+        }
+
+        .btn-text {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="border-b border-gray-100 sticky top-0 bg-[#FAFAFA]/90 backdrop-blur-sm z-50">
+            <div class="container mx-auto px-4 sm:px-6 flex items-center justify-between" style="min-height: 64px;">
+                <a href="#" class="flex items-center flex-shrink-0">
+                    <img src="newergofull.png" alt="Ergo" class="h-8">
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="min-h-screen flex items-start lg:items-center pt-2 lg:pt-0 mb-8 lg:mb-0" style="background-color: #F5F4F0;">
+                <div class="container mx-auto px-4 pt-16 lg:pt-0">
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <!-- Left Column -->
+                        <div class="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
+                            <h1 class="text-5xl md:text-6xl font-bold text-[#0E4676] mb-8 leading-tight">
+                                Make your existing CRM autonomous.
+                            </h1>
+                            <p class="text-gray-700 text-xl mb-6 leading-relaxed">
+                                Reap the benefits of a well-kept CRM without the headache of managing one.
+                            </p>
+                            <div class="flex items-center space-x-12">
+                                <button onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})" 
+                                        class="bg-gradient-to-r from-[#0E4676] to-[#1a5c8f] text-white font-bold px-8 py-3 rounded-lg 
+                                               hover:from-[#0a3557] hover:to-[#144a75] transition-all duration-200 
+                                               hover:transform hover:scale-105 shadow-lg btn-text">
+                                    Book Demo
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-gray-900 text-xl font-semibold hidden sm:inline btn-text">Backed by</span>
+                                    <img src="YCombinator.png" alt="Y Combinator" class="h-12">
+                                </div>
+                            </div>
+                            <div class="mt-4 sm:mt-8">
+                                <p class="text-sm text-gray-500 mb-4">Trusted By</p>
+                                <div class="flex flex-wrap items-center gap-4 sm:gap-8">
+                                    <a href="https://delve.co/" target="_blank" rel="noopener noreferrer" 
+                                       class="opacity-60 hover:opacity-100 transition-opacity">
+                                        <img src="delvelogo.svg" alt="Delve" class="h-7">
+                                    </a>
+                                    <a href="https://greptile.com/" target="_blank" rel="noopener noreferrer"
+                                       class="opacity-60 hover:opacity-100 transition-opacity">
+                                        <img src="transparentlogo.png" alt="Greptile" class="h-12">
+                                    </a>
+                                    <a href="https://origamiagents.com/" target="_blank" rel="noopener noreferrer"
+                                       class="opacity-60 hover:opacity-100 transition-opacity">
+                                        <img src="https://framerusercontent.com/images/FXX6K8IhrO5dlbKhTM2RLrkBjg.png" alt="Origami Agents" class="h-12">
+                                    </a>
+                                    <a href="https://splitit.com/" target="_blank" rel="noopener noreferrer"
+                                       class="opacity-60 hover:opacity-100 transition-opacity">
+                                        <img src="splitit.webp" alt="Splitit" class="h-14">
+                                    </a>
+                                    <a href="https://stratapro.io/" target="_blank" rel="noopener noreferrer"
+                                       class="opacity-60 hover:opacity-100 transition-opacity">
+                                        <img src="stratapro.png" alt="StrataPro" class="h-12">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Column - Integration Diagram -->
+                        <div class="lg:w-1/2 relative h-0 lg:h-auto">
+                            <div class="flex justify-center items-center">
+                                <div class="relative w-full h-0 lg:h-[600px]">
+                                    <!-- Top CRM Nodes -->
+                                    <div class="absolute w-full top-0 flex justify-between px-2 lg:px-6 hidden lg:flex">
+                                        <div class="bg-white rounded-xl shadow-lg p-2 lg:p-3 flex items-center justify-center w-16 h-16 lg:w-24 lg:h-24">
+                                            <img src="salesforce.png" alt="Salesforce" class="w-8 h-8 lg:w-12 lg:h-12 object-contain">
+                                        </div>
+                                        <div class="bg-white rounded-xl shadow-lg p-2 lg:p-3 flex items-center justify-center" style="width: 64px; height: 64px; width: 96px; height: 96px;">
+                                            <img src="hubspot.svg" alt="HubSpot" class="w-8 h-8 lg:w-12 lg:h-12 object-contain">
+                                        </div>
+                                        <div class="bg-white rounded-xl shadow-lg p-2 lg:p-3 flex items-center justify-center" style="width: 64px; height: 64px; width: 96px; height: 96px;">
+                                            <img src="attio-logo.png" alt="Attio" class="w-10 h-10 lg:w-16 lg:h-16 object-contain">
+                                        </div>
+                                    </div>
+
+                                    <!-- Center Ergo AI Node - Hidden on mobile -->
+                                    <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:block">
+                                        <div class="bg-white shadow-2xl p-8 lg:p-16 flex items-center justify-center rounded-full w-48 h-48 lg:w-72 lg:h-72">
+                                            <img src="Ergo%20Logo.png" alt="Ergo" class="h-32 w-32 lg:h-40 lg:w-40 mt-[8px] ml-[17px]">
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Bottom Integration Nodes -->
+                                    <div class="absolute bottom-0 w-full hidden lg:block">
+                                        <div class="hidden md:grid grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-1 px-2 lg:px-6">
+                                            <div class="flex flex-col items-center">
+                                                <div class="w-12 h-12 lg:w-14 lg:h-14 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                                                    <img src="googlecalendar.png" alt="Calendar" class="w-8 h-8 lg:w-10 lg:h-10">
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col items-center">
+                                                <div class="w-12 h-12 lg:w-14 lg:h-14 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                                                    <img src="slack.webp" alt="Slack" class="w-8 h-8 lg:w-10 lg:h-10">
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col items-center">
+                                                <div class="w-12 h-12 lg:w-14 lg:h-14 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                                                    <img src="gmail.webp" alt="Gmail" class="w-8 h-8 lg:w-10 lg:h-10">
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col items-center">
+                                                <div class="w-12 h-12 lg:w-14 lg:h-14 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                                                    <img src="circleback.jpg" alt="Circleback" class="w-8 h-8 lg:w-10 lg:h-10">
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col items-center">
+                                                <div class="w-12 h-12 lg:w-14 lg:h-14 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                                                    <img src="cal.png" alt="Cal" class="w-8 h-8 lg:w-10 lg:h-10">
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col items-center">
+                                                <div class="w-12 h-12 lg:w-14 lg:h-14 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                                                    <i data-lucide="more-horizontal" class="h-5 w-5 lg:h-6 lg:w-6 text-[#0E4676]"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Problem/Solution Section -->
+            <section class="py-24 border-y border-gray-100" style="background-color: #FAFAFA;">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-6xl mx-auto">
+                        <!-- Stats Bar with muted, non-gradient background -->
+                        <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">
+                            Real Results from Real Teams
+                        </h2>
+                        <div class="mb-16">
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 bg-[#F0F4F8] rounded-[2rem] shadow-lg p-12">
+                                <div class="text-center">
+                                    <div class="text-4xl sm:text-6xl font-bold text-[#0E4676] mb-4 sm:mb-6">$125k</div>
+                                    <p class="text-gray-600 text-lg sm:text-2xl">Prevented Bleed</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl sm:text-6xl font-bold text-[#0E4676] mb-4 sm:mb-6">1.6x</div>
+                                    <p class="text-gray-600 text-lg sm:text-2xl">More Deals Closed</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl sm:text-6xl font-bold text-[#0E4676] mb-4 sm:mb-6">10+</div>
+                                    <p class="text-gray-600 text-lg sm:text-2xl">Hours Saved per Week</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">
+                            Sound familiar?
+                        </h2>
+                        
+                        <!-- Pain Points Grid -->
+                        <div class="grid md:grid-cols-3 gap-8 mb-16">
+                            <div class="card flex flex-col h-full p-6 solid-bg-1 rounded-lg">
+                                <div class="text-center mb-4">
+                                    <i class="card-icon" data-lucide="clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xl font-bold text-gray-900 mb-4">
+                                        Manual CRM Updates Are a Time Sink
+                                    </p>
+                                    <p class="text-gray-600">
+                                        Every call, email, and meeting requires a manual CRM update. It's easy to forget, but the consequences are costly.
+                                    </p>
+                                </div>
+                                <div class="mt-auto pt-8 text-center">
+                                    <div class="text-[#0E4676] font-medium">
+                                        Ergo sync removes manual updates
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card flex flex-col h-full p-6 solid-bg-2 rounded-lg">
+                                <div class="text-center mb-4">
+                                    <i class="card-icon" data-lucide="bell"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xl font-bold text-gray-900 mb-4">
+                                        Deals Lost due to Missed Follow-ups
+                                    </p>
+                                    <p class="text-gray-600">
+                                        Critical follow-ups falling through the cracks lead to lost opportunities and revenue. Ergo ensures nothing gets missed.
+                                    </p>
+                                </div>
+                                <div class="mt-auto pt-8 text-center">
+                                    <div class="text-[#0E4676] font-medium">
+                                        100% follow-up completion rate
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card flex flex-col h-full p-6 solid-bg-3 rounded-lg">
+                                <div class="text-center mb-4">
+                                    <i class="card-icon" data-lucide="bar-chart-2"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xl font-bold text-gray-900 mb-4">
+                                        Completely Unreliable Pipeline Data
+                                    </p>
+                                    <p class="text-gray-600">
+                                        Out-of-date CRM data makes forecasting impossible and pipeline reviews painful. Ergo keeps everything current in real-time.
+                                    </p>
+                                </div>
+                                <div class="mt-auto pt-8 text-center">
+                                    <div class="text-[#0E4676] font-medium">
+                                        Real-time pipeline accuracy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Section -->
+                        <div class="text-center pt-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 mb-12">
+                                <!-- First Testimonial -->
+                                <div>
+                                    <blockquote class="text-2xl font-medium text-gray-900 mb-8 text-center">
+                                        "Ergo saves me 12h per week, it's a game changer. We barely touch the CRM. If you haven't tried it yet, you have to"
+                                    </blockquote>
+                                    <div class="flex items-center justify-center">
+                                        <img src="avatar.png" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                                        <div class="text-left">
+                                            <div class="font-bold">Karun Kaushik</div>
+                                            <div class="text-gray-600">CEO, Delve</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Second Testimonial -->
+                                <div>
+                                    <blockquote class="text-2xl font-medium text-gray-900 mb-8 text-center">
+                                        "We use this at Greptile, it's really good! It auto-updates our CRM from Circleback meetings, recordings and emails"
+                                    </blockquote>
+                                    <div class="flex items-center justify-center">
+                                        <img src="daksh.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                                        <div class="text-left">
+                                            <div class="font-bold">Daksh Gupta</div>
+                                            <div class="text-gray-600">CEO, Greptile</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <div class="flex justify-center">
+                                <button onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})" 
+                                        class="bg-gradient-to-r from-[#0E4676] to-[#1a5c8f] text-white font-bold px-8 py-3 rounded-lg 
+                                               hover:from-[#0a3557] hover:to-[#144a75] transition-all duration-200 
+                                               hover:transform hover:scale-105 shadow-lg btn-text">
+                                    Book Demo
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Stepper UI -->
+                        <div class="stepper-container" style="padding-top: 6rem;">
+                            <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">
+                                Premier Processes
+                            </h2>
+                            <div class="stepper" data-sequence="1">
+                                <div class="step" data-step="1">
+                                    <img src="newzoom.png" alt="Zoom" class="step-icon">
+                                    <p>Meeting taken</p>
+                                </div>
+                                <svg class="arrow" viewBox="0 0 100 10" data-step="2">
+                                    <defs>
+                                        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                                            <polygon points="0 0, 8 3, 0 6" fill="#0E4676" />
+                                        </marker>
+                                    </defs>
+                                    <path d="M0,5 L92,5" fill="none" stroke="#0E4676" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                                </svg>
+                                <div class="step" data-step="3">
+                                    <img src="hubspot.svg" alt="HubSpot" class="step-icon">
+                                    <p>CRM updated</p>
+                                </div>
+                                <svg class="arrow" viewBox="0 0 100 10" data-step="4">
+                                    <defs>
+                                        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                                            <polygon points="0 0, 8 3, 0 6" fill="#0E4676" />
+                                        </marker>
+                                    </defs>
+                                    <path d="M0,5 L92,5" fill="none" stroke="#0E4676" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                                </svg>
+                                <div class="step" data-step="5">
+                                    <img src="gmail.webp" alt="Gmail" class="step-icon">
+                                    <p>Follow-up email</p>
+                                </div>
+                            </div>
+                            <div style="height: 2rem;"></div> <!-- Spacing between steppers -->
+                            <div class="stepper" data-sequence="2">
+                                <div class="step" data-step="1">
+                                    <img src="gmail.webp" alt="Gmail" class="step-icon">
+                                    <p>Incoming email</p>
+                                </div>
+                                <svg class="arrow" viewBox="0 0 100 10" data-step="2">
+                                    <defs>
+                                        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                                            <polygon points="0 0, 8 3, 0 6" fill="#0E4676" />
+                                        </marker>
+                                    </defs>
+                                    <path d="M0,5 L92,5" fill="none" stroke="#0E4676" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                                </svg>
+                                <div class="step" data-step="3">
+                                    <img src="hubspot.svg" alt="HubSpot" class="step-icon">
+                                    <p>CRM updated</p>
+                                </div>
+                                <svg class="arrow" viewBox="0 0 100 10" data-step="4">
+                                    <defs>
+                                        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                                            <polygon points="0 0, 8 3, 0 6" fill="#0E4676" />
+                                        </marker>
+                                    </defs>
+                                    <path d="M0,5 L92,5" fill="none" stroke="#0E4676" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+                                </svg>
+                                <div class="step" data-step="5">
+                                    <img src="gmail.webp" alt="Gmail" class="step-icon">
+                                    <p>Drafted email</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sales Director Impact Section -->
+            <section class="py-24 bg-[#F5F4F0]">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="text-4xl font-bold text-center mb-24">
+                            Sales Management's Best Friend
+                        </h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-12 items-stretch">
+                            <!-- Left side - Image -->
+                            <div class="flex items-center justify-center">
+                                <div class="bg-[#0E4676] p-12 rounded-[2rem] h-full flex items-center justify-center">
+                                    <img src="Ergo%20Logo.png" alt="Ergo" class="h-48 brightness-0 invert">
+                                </div>
+                            </div>
+
+                            <!-- Right side - Text -->
+                            <div class="space-y-6 flex flex-col justify-center">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <i data-lucide="check-circle" class="h-6 w-6 text-[#0E4676]"></i>
+                                    </div>
+                                    <p class="text-xl text-gray-600">Get real-time pipeline visibility without chasing your team for updates. Every customer interaction automatically syncs to your CRM.</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 mt-1">
+                                        <i data-lucide="check-circle" class="h-6 w-6 text-[#0E4676]"></i>
+                                    </div>
+                                    <p class="text-xl text-gray-600">Enable smooth handoffs between sales, onboarding, and customer success teams with detailed, up-to-date context in your CRM.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="py-20 bg-[#F5F4F0]">
+                <div class="container mx-auto px-8 sm:px-16">
+                    <h2 class="text-4xl font-bold text-center mb-16">Key Features</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        <div class="card">
+                            <h3 class="text-xl font-bold mb-4">Automated Data Entry</h3>
+                            <p class="text-gray-600 mb-6">Save hours of manual work with our intelligent data capture system that processes and organizes customer information.</p>
+                            <button onclick="window.location.href='#features'" 
+                                    class="text-[#0E4676] font-medium hover:opacity-80 transition-opacity duration-200 flex items-center">
+                                Learn More →
+                            </button>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="text-xl font-bold mb-4">Seamless Integration</h3>
+                            <p class="text-gray-600 mb-6">Easily connect with your existing tools and workflows. Our platform works with the software you already use.</p>
+                            <button onclick="window.location.href='#features'" 
+                                    class="text-[#0E4676] font-medium hover:opacity-80 transition-opacity duration-200 flex items-center">
+                                Learn More →
+                            </button>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="text-xl font-bold mb-4">Automate Sales Tasks</h3>
+                            <p class="text-gray-600 mb-6">Our system logs and completes internal tasks from customer communication. All that's left is a quick human review.</p>
+                            <button onclick="window.location.href='#features'" 
+                                    class="text-[#0E4676] font-medium hover:opacity-80 transition-opacity duration-200 flex items-center">
+                                Learn More →
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Main Book Demo button keeps the new gradient style -->
+                    <div class="text-center mt-16">
+                        <button onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})" 
+                                class="bg-gradient-to-r from-[#0E4676] to-[#1a5c8f] text-white font-bold px-8 py-3 rounded-lg 
+                                       hover:from-[#0a3557] hover:to-[#144a75] transition-all duration-200 
+                                       hover:transform hover:scale-105 shadow-lg btn-text">
+                            Book Demo
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section with Calendly -->
+            <section id="booking" class="py-32" style="background-color: #F5F4F0;">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto text-center mb-16">
+                        <h2 class="text-4xl font-bold mb-6">
+                            Give your sales team their Sundays back
+                        </h2>
+                        <p class="text-xl text-gray-600 mb-8">
+                            Join teams who have automated their CRM workflow with Ergo
+                        </p>
+                        <!-- Social proof bar - centered with flex and auto margins -->
+                        <div class="flex items-center justify-center space-x-8 mb-12 max-w-2xl mx-auto">
+                            <div class="flex items-center">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600 text-sm">Constant access to founders</span>
+                            </div>
+                            <div class="h-4 w-px bg-gray-300"></div>
+                            <div class="flex items-center">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600 text-sm">White glove onboarding</span>
+                            </div>
+                            <div class="h-4 w-px bg-gray-300"></div>
+                            <div class="flex items-center">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2"></i>
+                                <span class="text-gray-600 text-sm">1:1 support</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Calendly container with shadow and rounded corners -->
+                    <div class="max-w-4xl mx-auto bg-[#F5F5F3] rounded-2xl shadow-lg p-6">
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/yash-joinergo/30min?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-gray-100 py-12" style="background-color: #FAFAFA;">
+            <div class="container mx-auto px-4">
+                <div class="mb-8 text-center">
+                    <a href="privacy-policy" class="text-base text-[#0E4676] hover:text-[#0a3557] transition-colors font-medium">
+                        Privacy Policy
+                    </a>
+                </div>
+                <p class="text-sm text-gray-600 text-center">
+                    © Ergo. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Privacy Policy Scripts -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+
+    <script>
+        let activeSequence = null;
+        let isAnimating = false;
+        let lockPosition = 0;
+
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.stepper').forEach(stepper => {
+                const rect = stepper.getBoundingClientRect();
+                const sequence = stepper.dataset.sequence;
+                
+                // Increased threshold for second sequence to 0.95
+                const threshold = sequence === "1" ? 0.8 : 0.95;
+                
+                if (rect.top < window.innerHeight * threshold && rect.bottom > window.innerHeight * 0.3) {
+                    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    
+                    const progress = (window.innerHeight * threshold - rect.top) / (window.innerHeight * 0.4);
+                    const stepProgress = Math.min(Math.floor(progress * 6), 5);
+                    
+                    for (let i = 1; i <= 5; i++) {
+                        const element = stepper.querySelector(`[data-step="${i}"]`);
+                        if (element) {
+                            if (i <= stepProgress) {
+                                element.classList.add('animate');
+                            } else {
+                                element.classList.remove('animate');
+                            }
+                        }
+                    }
+                }
+            });
+        });
+
+        window.addEventListener('wheel', (e) => {
+            const stepper = document.querySelector('.stepper[data-sequence="1"]');
+            if (stepper) {
+                const rect = stepper.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8 && rect.bottom > window.innerHeight * 0.3) {
+                    const scrollSpeed = 0.5;
+                    window.scrollBy({
+                        top: e.deltaY * scrollSpeed,
+                        behavior: 'auto'
+                    });
+                }
+            }
+        }, { passive: true });
+    </script>
+</body>
+
+<!-- Mirrored from joinergo.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 17:29:37 GMT -->
+</html> 
